@@ -14,15 +14,15 @@ public class CarServiceImp implements CarService{
     private final Car car4 = new Car("Ford", "Mondeo", 2017);
     private final Car car5 = new Car("Lada", "Vesta", 2020);
 
+    List<Car> cars = new ArrayList<>();
+    {cars.add(car1);
+    cars.add(car2);
+    cars.add(car3);
+    cars.add(car4);
+    cars.add(car5);}
 
     @Override
     public List<Car> getCar(int count) {
-        List<Car> cars = new ArrayList<>();
-        cars.add(car1);
-        cars.add(car2);
-        cars.add(car3);
-        cars.add(car4);
-        cars.add(car5);
         return cars.stream().limit(count).toList();
     }
 }
