@@ -14,7 +14,7 @@ public class CarServiceImp implements CarService{
     private final Car car4 = new Car("Ford", "Mondeo", 2017);
     private final Car car5 = new Car("Lada", "Vesta", 2020);
 
-    List<Car> cars = new ArrayList<>();
+    private List<Car> cars = new ArrayList<>();
     {cars.add(car1);
     cars.add(car2);
     cars.add(car3);
