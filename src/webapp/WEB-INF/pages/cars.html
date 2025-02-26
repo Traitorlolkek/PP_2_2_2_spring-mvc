@@ -7,13 +7,16 @@
         body {
             font-family: Arial, sans-serif;
         }
+
         .title {
             text-align: center;
         }
+
         table {
             margin: auto;
             border-collapse: collapse;
         }
+
         th, td {
             border: 1px solid black;
             padding: 10px;
@@ -29,11 +32,13 @@
 
 <table>
     <caption>List of Cars</caption>
-    <thead><tr>
+    <thead>
+    <tr>
         <th>Brand</th>
         <th>Model</th>
         <th>Year</th>
-    </tr></thead>
+    </tr>
+    </thead>
     <tbody>
     <tr th:each="car : ${cars}">
         <td th:text="${car.brand}"></td>
